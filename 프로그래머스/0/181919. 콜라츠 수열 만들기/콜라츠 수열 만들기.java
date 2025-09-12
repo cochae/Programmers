@@ -6,13 +6,14 @@ class Solution {
         while(n != 1){
             
         if(n % 2 == 0) {
-            list.add(n/2);
+            
             n /= 2;}
         
         else{
-            list.add(n*3+1);
+            
             n = n*3+1;
         }
+            list.add(n);
         }
         int[] answer = list.stream()
                    .mapToInt(Integer::intValue)
